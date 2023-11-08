@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<magic>
+  <Styles>
+    <Style name="default">
+      <Nodes/>
+      <Classes>
+        <plot-view border="2" background-color="black" border-color="silver" display="contents"/>
+        <nomargin margin="0" padding="0" border="0"/>
+        <group margin="5" padding="5" border="2" flex-direction="column"/>
+        <transparent background-color="transparentblack"/>
+      </Classes>
+      <Types>
+        <Slider border="0" slider-textbox="textbox-below"/>
+        <ToggleButton border="0" max-height="50" caption-size="0" text="Active"/>
+        <TextButton border="0" max-height="50" caption-size="0"/>
+        <ComboBox border="0" max-height="50" caption-size="0"/>
+        <Plot border="0" margin="0" padding="0" background-color="00000000"
+              radius="0"/>
+        <XYDragComponent border="0" margin="0" padding="0" background-color="00000000"
+                         radius="0"/>
+      </Types>
+      <Palettes>
+        <default/>
+      </Palettes>
+    </Style>
+  </Styles>
+  <View id="root" resizable="1" resize-corner="1" background-color="FF622500"
+        flex-direction="column" border="0" radius="0" border-color="FFDB4545"
+        margin="0" padding="0" width="380" height="380">
+    <View flex-direction="column" border="2" border-color="FFF4B46D" radius="20"
+          background-color="FF622500">
+      <Label text="MoogVibe" justification="centred" font-size="24" background-color="FF622500"
+             margin="0" padding="0" border="0" lookAndFeel="FoleysFinest"
+             title="" label-background="FF622500" flex-shrink="1" flex-grow="2"/>
+      <View margin="0" padding="0" border="0" background-color="FF622500"
+            flex-grow="8">
+        <Slider caption="Cutoff Frequency" parameter="cutoffFrequency" background-color="FF622500"
+                lookAndFeel="FoleysFinest" slider-type="rotary-horizontal-vertical"
+                slider-textbox="textbox-below" rotary-fill="FFF5BE8D" slider-background="FFFF1919"
+                slider-thumb="FFFF0909" slider-track="FFFF0000" rotary-outline="FFBF712B"
+                tab-color="" border-color="FFF4B46D" border="2" radius="20"/>
+        <Slider caption="Resonance" parameter="resonance" border="2" border-color="FFF4B46D"
+                radius="20" background-color="FF622500" slider-type="rotary-horizontal-vertical"
+                rotary-fill="FFF5BE8D" rotary-outline="FFBF712B" slider-text=""/>
+      </View>
+      <View class="parameters nomargin" background-color="FF622500" flex-grow="8">
+        <Slider caption="Bass Compensation" parameter="bassComp" border="2" radius="20"
+                border-color="FFF4B46D" background-color="FF622500" slider-type="rotary-horizontal-vertical"
+                rotary-fill="FFF5BE8D" rotary-outline="FFBF712B"/>
+        <Slider caption="Gain" parameter="gain" rotary-outline="FFBF712B" rotary-fill="FFF5BE8D"
+                slider-type="rotary-horizontal-vertical" background-color="FF622500"
+                border-color="FFF4B46D" border="2" radius="20"/>
+      </View>
+    </View>
+  </View>
+</magic>
